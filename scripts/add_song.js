@@ -10,7 +10,8 @@ async function addSong(){
         artist: document.querySelector("#artist").value,
         popularity: document.querySelector("#popularity").value,
         releaseDate: document.querySelector("#released").value,
-        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : []
+        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : [],
+        username: localStorage.getItem("uname")
     }
 
     console.log(song)
